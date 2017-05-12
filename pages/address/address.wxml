@@ -1,0 +1,6 @@
+ <view class="address">
+      <view class="list" wx:for="{{address}}">
+         <view class="address_name">{{item.title}}</view>
+         <view class="classname">{{item.address}}</view>
+      </view>
+   </view>

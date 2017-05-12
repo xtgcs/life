@@ -1,0 +1,8 @@
+{  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "松果",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":"true"
+  }
+  }

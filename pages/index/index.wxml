@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="search_box">
+       <input class="search" type="text" confirm-type="done" bindconfirm="search" placeholder="搜索地址" placeholder-style="text-align: center;font-size:28rpx;color:#ccc"/>
+   </view>
+   <view class="card"  wx:if="{{show}}">
+      <navigator id="{{activity.id}}" url="../activity_detail/activity_detail?id={{activity.id}}" class="item">
+   <view class="list">
+         <view class="top_image">  
+            <image src="{{activity.cover.url}}"></image>
+        </view>
+     <view class="title">{{activity.name}}</view>
+  
+     <view class="time_address">
+                <text class="time">{{activity.time}}</text>
+                 <text class="address">{{activity.address}}</text>
+                 <text class="price">¥:{{activity.price}}</text>
+            </view>
+   </view>
+ 
+    <!--<view class="details">查看详情</view>-->
+        </navigator>
+         </view>
+ <view class="address" wx:if="{{list}}">
+      <view class="list" wx:for="{{address}}">
+      <view bindtap="location" data-address="{{item.location}}">
+         <view class="address_name">{{item.title}}</view>
+         <view class="classname">{{item.address}}</view>
+      </view>
+      </view>
+   </view>
+
+   <view class="map" style="top:{{height}}">
+     <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" 
+     controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location
+     bindtap="hide" ></map>
+  </view>
+  
+</view>

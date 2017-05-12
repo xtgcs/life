@@ -1,0 +1,79 @@
+/**index.wxss**/
+page{
+    height: 100%;
+}
+.search_box{
+    height: 80rpx;
+    padding: 20rpx;
+}
+.search_box .search{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.map{
+    width: 100%;
+    position: absolute;
+    top:85rpx;
+    bottom:0;
+    left:0;
+}
+.map #map{
+   width: 100%;
+   height: 600rpx;
+}
+.card{
+    position: absolute;
+    top:100rpx;
+    left: 0;
+    z-index: 1000;
+    margin: 10rpx;
+    background: #fff;
+    border: 10rpx;
+    padding: 20rpx;
+    border-radius: 10rpx;
+    border: 1px solid #ccc;
+}
+.card .title{
+    width: 100%;
+    line-height: 50rpx;
+    display: block;
+    font-size: 38rpx;
+    padding: 10rpx;
+}
+.card .activity-info{
+    width: 100%;
+    height: 210rpx;
+}
+.card .activity-info image{
+    width: 200rpx;
+    height: 200rpx;
+    float: left;
+    border-radius: 10rpx;
+}
+.card .activity-info .time-address{
+    height: 100rpx;
+    width: 450rpx;
+    float: left;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    color: #5A5555;
+}
+.time-address .time{
+    display: block;
+    padding: 15rpx;
+    margin-top: 10rpx;
+}
+.time-address .address{
+    display: block;
+    padding: 15rpx;
+    margin-top: 5rpx;
+}
+.item{
+    border-top: 1px solid #ccc;
+}
+.item .details{
+    padding: 10rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+}

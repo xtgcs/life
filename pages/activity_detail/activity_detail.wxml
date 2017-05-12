@@ -1,0 +1,52 @@
+
+    <view class="main-container">
+        <view class="detail-container">
+            <view class="activity-panel">
+                <view class="top-image">
+                        <image src="{{activity.topImage.url }}"></image>
+                </view>
+                <view class="information">
+                <view class="title">{{activity.name}}</view>
+                        <view class="theme">
+                            <view class="price">¥: {{activity.price}}</view>
+                           <view class="places">活动名额：<text>{{activity.maxAttendees}}人</text></view>
+                           <view class="time">活动时间：<text>{{activity.time}}</text></view>
+                           <view class="address" bindtap="openLocation" data-address="{{activity.geo.coordinates}}">活动地址：<text>{{activity.address}}</text></view>
+                        </view>
+                </view>
+                  
+            </view>
+             <view class="lifes">
+                           <view class="portrait">
+                              <image src="{{activity.user.icon}}"></image>
+                           </view>
+                           <view class="introduce">
+                              <text class="lifes_name">{{activity.user.nick}}</text>
+                              <text class="lifes_msg">{{activity.user.signature}}</text>
+                           </view>
+                 </view>
+                <view class="content-container">
+                    <view class="content">
+                    <view class="activity_introduce">活动介绍</view>
+                        <view class="resource-list">
+                            <view wx:for="{{activity.resource}}">
+                                <view class="image-resource" wx:if="{{item.tp== 0}}">
+                                        <image src="{{item.url }}" mode="widthFix"></image>
+                                    <view wx:if="{{!!item.desc}}" class="res-desc">{{item.desc}}</view>
+                                </view>
+                                <view wx:if="{{item.tp == 1}}"></view>
+                                <view wx:if="{{item.tp == 2 && item.isSubTitle==1}}" class="sub-title">
+                                    {{item.txt}}
+                                </view>
+                                <view wx:if="{{item.tp == 2 && item.isSubTitle==0}}" class="text">
+                                    {{item.txt}}
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="btn">
+                我要参加活动
+                </view>
+        </view>
+    </view>

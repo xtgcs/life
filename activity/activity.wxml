@@ -1,0 +1,30 @@
+<!--pages/activity/activity.wxml-->
+<view class="bg"></view>
+<view class="lists">
+ <block wx:for="{{lists}}">
+      <navigator id="{{item.id}}" url="../activity_detail/activity_detail?id={{item.id}}" class="item">
+   <view class="list">
+    <image src="{{item.cover.url}}"></image>
+    <view class="title-bg"> </view>
+    <view class="activity-info">
+       <text class="activity-type">活动</text>
+          <text class="title">{{item.name}}</text>
+            <view class="time-address">
+                <text class="time">{{item.time}}</text>
+                 <text>{{item.address}}</text>
+            </view>
+           <!--<view class="location">
+               <view class="location-icon">
+                    <image src="{{}}"></image>
+               </view>
+               <text class="location-city">
+                    {{}}
+               </text>
+          </view>-->
+    </view>
+   </view>
+     </navigator>
+    </block>
+</view>
+
+

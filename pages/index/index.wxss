@@ -1,0 +1,108 @@
+/**index.wxss**/
+page{
+    height: 100%;
+}
+.search_box{
+    height: 80rpx;
+    padding: 20rpx 30rpx;
+}
+.search_box .search{
+    width: 100%;
+    margin: 0 auto;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 32rpx;
+    padding: 10rpx 30rpx;
+    border-radius: 10rpx;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.map{
+    width: 100%;
+    position: absolute;
+    top:85rpx;
+    bottom:0;
+    left:0;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.map #map{
+   width: 100%;
+   height:100%;
+}
+.card{
+    position: absolute;
+    top:85rpx;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 0 30rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.card .list{
+     background: #F4F4F4;
+     margin-bottom: 10rpx
+}
+.card .top_image{
+    width: 100%;
+    height: 360rpx;
+}
+.card .top_image image{
+    width: 100%;
+    height: 100%;
+}
+.card .title{
+    width: 100%;
+    line-height: 50rpx;
+    font-size: 32rpx;
+    padding: 24rpx 10rpx 0;
+    font-family: PingFangSC-Regular;
+    color: #333333;
+}
+.time_address{
+    padding:0 16rpx 20rpx 16rpx;
+}
+.time_address .time, .time_address .address{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #888888;
+    width: 310rpx;
+    overflow: hidden;
+}
+.time_address .price{
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #C16531;
+    float: right;
+}
+
+.item{
+    border-top: 1px solid #ccc;
+}
+.item .details{
+    padding: 10rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+}
+/*地址列表*/
+.address{
+    height: 440rpx;
+    margin: 0 auto;
+    overflow-y: scroll;
+    font-size: 30rpx;
+    padding: 0 30rpx;
+}
+.address .list{
+    padding: 10rpx 0;
+    border-bottom: 1px solid #ccc;
+}
+.address .list .address_name{
+    color: #F6A623;
+    line-height: 32rpx;
+}
+.address .list .classname{
+    font-size: 28rpx;
+    color: #000;
+    line-height: 30rpx;
+}
